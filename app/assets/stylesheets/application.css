@@ -13,3 +13,89 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #495057;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ff8787;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #ff6b6b;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px #868e96;
+  background-color: #e9ecef;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #868e96;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.navbar a:first-child:hover {
+  color: #495057;
+}
+
+.navbar a:last-child:hover {
+  color: #ff6b6b;
+}
+
+article {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article a {
+  text-decoration: none;
+  color: #ff8787;
+  transition: all 0.3s;
+}
+
+article a:hover {
+  color: #ff6b6b;
+}
+
+/* SHOW Page */
+
+.article-header {
+  display: flex;
+  gap: 5px;
+  border-bottom: solid 1px #e9ecef;
+  margin-bottom: 10px;
+}
+
+button {
+  color: #ff8787;
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+button:hover {
+  color: #ff6b6b;
+}

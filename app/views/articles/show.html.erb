@@ -1,0 +1,13 @@
+<div class="navbar">
+<%= link_to "Wikinimous", articles_path %>
+<%= link_to "New Article", new_article_path %>
+</div>
+
+<div class="container">
+<h1 class="article-header">
+<%= @article.title %>
+<%= button_to "", edit_article_path, :class => 'fa-solid fa-pen-to-square btn', method: :get %>
+<%= button_to "", article_path(@article), :class => 'fa-solid fa-trash-can btn', method: :delete %>
+</h1>
+<p><%= @article.content %></p>
+</div>
